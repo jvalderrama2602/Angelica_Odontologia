@@ -10,13 +10,13 @@
     */
 
     # put your email address here
-    define( 'OWNER_EMAIL', 'josevalderrama2602@hotmail.com' );
+    define( 'OWNER_EMAIL', 'angel_es2589@hotmail.com' );
     
     # put your website "do not reply" email here
-    define( 'DONOTREPLY_EMAIL', 'josevalderrama2602@hotmail.com' );
+    define( 'DONOTREPLY_EMAIL', 'angel_es2589@hotmail.com' );
     
     # put your name here
-    define( 'OWNER_NAME', 'Servicios Odontológicos' );
+    define( 'OWNER_NAME', 'Servicios Odontologicos' );
 
    /**
     *
@@ -35,14 +35,14 @@
         case 'contact-form':                                            
     
             # put the email title here
-            $title = $_POST['Title'];
+            $title = $_POST['clientMessageTitle'];
         
             # email headers
             $headers = "MIME-Version: 1.0\n".
                        "Content-type: text/html; charset=utf-8\n".
                        "Content-Transfer-Encoding: 8bit\n".
-                       "From: ". $_POST['Name'] ." <". $_POST['E-mail'] .">\n".
-                       "Reply-to: ". $_POST['Name'] ." <". $_POST['E-mail'] .">\n".
+                       "From: ". $_POST['clientName'] ." <". $_POST['clientEmail'] .">\n".
+                       "Reply-to: ". $_POST['clientName'] ." <". $_POST['clientEmail'] .">\n".
                        "Date: ". date( "r" ). "\n";
         
             # appointment values
@@ -99,8 +99,8 @@
             $headers = "MIME-Version: 1.0\n".
                        "Content-type: text/html; charset=utf-8\n".
                        "Content-Transfer-Encoding: 8bit\n".
-                       "From: ". $_POST['Name'] ." <". $_POST['E-mail'] .">\n".
-                       "Reply-to: ". $_POST['Name'] ." <". $_POST['E-mail'] .">\n".
+                       "From: ". $_POST['clientName'] ." <". $_POST['clientEmail'] .">\n".
+                       "Reply-to: ". $_POST['clientName'] ." <". $_POST['clientEmail'] .">\n".
                        "Date: ". date( "r" ). "\n";
         
             # appointment values
@@ -161,7 +161,7 @@
                        "Date: ". date( "r" ). "\n";
 
             # email content
-            $content = 'New Phone Call Request from your website: <strong>'. $_POST['Phone-number'] .'</strong>';
+            $content = 'New Phone Call Request from your website: <strong>'. $_POST['phoneNumber'] .'</strong>';
             
             # sending an email
             $result = mail(

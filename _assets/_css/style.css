@@ -2032,7 +2032,8 @@ section.box-with-image-right .green-line {
     width: 150px;
     height: 5px;
     left: 0;
-    background: #91da32;
+    background: rgba( 0, 188, 212, 0.85 );
+    /*background: #91da32;*/
     opacity: 0.75;
     position: absolute;
     top: 0;
