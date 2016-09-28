@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    
+    <title>Servicios Odontológicos</title>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Signika:300,400,600,700" />
+    <link rel="stylesheet" type="text/css" href="_assets/_libs/font-awesome/css/font-awesome.css" /> 
+    <link rel="stylesheet" type="text/css" href="_assets/_libs/no-ui-slider/jquery.nouislider.css" />
+    <link rel="stylesheet" type="text/css" href="_assets/_libs/animate.css" /> 
+    <link rel="stylesheet" type="text/css" href="_assets/_css/style.css" />  
+    <style>
+     header .titulo {
+
+        color: #fff;
+        text-decoration:none;
+        font-size: 18px;
+     }
+     div p.justificar{
+        text-align: justify;
+     }
+    </style>
+</head>
+<body>
+    
+    <div id="loader">
+
+        <div class="loader-spinner">
+        </div>
+    
+    </div>
+                 
+    <div id="contact-popup">
+    
+        <div id="contact-popup-background">
+        </div>
+    
+        <div id="contact-popup-content" class="animated speed">
+
+            <div id="contact-popup-close"><i class="fa fa-times"></i></div>
+
+            <div id="google-map" data-lat="10.491930" data-lng="-66.868297" data-zoom-level="15">
+            </div>
+            
+            <div class="padding">
+
+                <i class="fa fa-envelope-o background-icon"></i>
+                
+                <h3>Concerta una cita</h3>
+                <h3 class="right">(+58) 412 594 88 72</h3>
+                
+                <h2>o Envianos un<span> Email</span></h2>
+                <form method="post" class="form">
+                
+                    <h4>Detalles de Contacto</h4>
+                    <input type="text" name="Name" placeholder="Su nombre..." class="contact-form-element contact-form-client-name" />
+                    <input type="text" name="Phone number" placeholder="Su telefono..." class="contact-form-element last" />
+                    <input type="text" name="E-mail" placeholder="Su e-mail..." class="contact-form-element contact-form-client-email" />
+                    <input type="text" name="Title" placeholder="Escriba un asunto" class="contact-form-element contact-form-client-message-title last" />
+                    
+                    <h4>Mensaje</h4>
+                    <textarea name="Message" rows="5" cols="5" placeholder="Su Mensaje..." class="contact-form-element"></textarea>
+                    <button class="button button-navy-blue send-contact" type="button">Enviar Consulta <i class="fa fa-paper-plane-o"></i></button>      
+                             
+                    <div class="contact-form-thanks">
+                            
+                        <div class="contact-form-thanks-content">
+                        
+                            Su mensaje se ha enviado correctamente. 
+                            <span class="contact-form-thanks-close">Cerrar este aviso.</span>
+                        
+                        </div>
+                    
+                    </div>         
+                                                                         
+                </form>
+            
+            </div>
+        
+        </div>
+    
+    </div>  
+
+  
+
+    <header>
+    
+        <div class="center">
+
+            <div class="logo">
+            <!-- <img src="_assets/_img/logo.png" alt="Insurance Agency" /> -->
+                <a class="titulo" href="index.html">Angélica Carmona</a><br>
+                <p class="titulo">Odontólogo</p>
+            
+            </div>
+
+            <nav>
+            
+                <ul class="menu">
+                
+                    <li class="active"><a href="/index.html">Inicio</a></li>
+                
+                    <li><button class="menu-element" data-action="show-contact-popup">Contacto</button></li>
+    
+                </ul>
+                
+                <div class="menu-responsive"><i class="fa fa-bars"></i></div>
+            
+            </nav>
+            
+            <div class="clear">
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="heading">
+    
+        <div class="heading-slides">
+        
+            <div class="heading-slide-single" data-slide-id="1" style="background-image: url( '_assets/_img/sitting.jpg' );">
+            
+                <div class="flying-1">
+                
+                    <span>Servicios Odontológicos</span>
+                
+                </div>
+                
+                <div class="flying-2">
+                
+                    <h3>Realiza<br /> tu cita online</h3>
+                    <p>No te compliques desde aqui puedes hacer consultas de nuestros servicios o concertar una cita.</p>
+                    
+                    <button class="button button-white" data-action="show-contact-popup" data-quote-key="life-insurance">Quiero una cita <i class="fa fa-paper-plane-o"></i></button>
+                
+                </div>
+                
+                <div class="heading-content">
+                    
+                    <h2>Los mejores servicios</h2>
+                    <h3>Tecnología y atención <br />personalizada, lo mejor para el cuidado dental.</h3>
+                    
+                    <button onclick="location.href='#servicios'" class="button button-navy-blue" data-action="show-quote-popup" data-quote-key="life-insurance">Mira más<i class="fa fa-paper-plane-o"></i></button>
+        
+                </div>
+            
+            </div>
+            
+            <div class="heading-slide-single" data-slide-id="2" style="background-image: url( '_assets/_img/dentista-0.jpg' );">
+            
+                <div class="flying-1">
+                
+                    <span>Servicios Odontológicos</span>
+                
+                </div>
+                
+                <div class="flying-2">
+                
+                    <h3>Realiza<br /> tu cita online</h3>
+                    <p>No te compliques desde aqui puedes hacer consultas de nuestros servicios o concertar una cita.</p>
+
+
+                    
+                    <button class="button button-white" data-action="show-contact-popup" data-quote-key="life-insurance">Quiero una cita<i class="fa fa-paper-plane-o"></i></button>
+                
+                </div>
+                
+                <div class="heading-content">
+                    
+                    <h2>Realiza tu cita online</h2>
+                    <h3>Puedes llamar <br /> o mandanos un email.</h3>
+                    
+
+                    <button class="button button-navy-blue" data-action="show-contact-popup" data-quote-key="life-insurance">Quiero una cita<i class="fa fa-paper-plane-o"></i></button>
+        
+                </div>
+            
+            </div>
+
+        
+        
+        </div>
+
+    </div>
+    
+    <section class="call-to-action background">
+    
+        <div class="center">
+
+            <div class="left">
+            
+                <h2>Hazlo por una mejor sonrisa</h2>
+                <p>Pregunta sobre nuestros servicios via e-mail o telefónica, estamos para atenderte.</p>
+                
+              
+            </div>
+        
+            <div class="right">
+            
+                <div class="circles">
+
+                    <div class="circle-1 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-2 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-3 circle-pulse">
+                    </div>
+                    
+                    <div class="circle-4 circle-pulse">
+                    </div>
+                    
+                    <a href="tel:+584125948872">
+                    
+                        <div class="circle-center">
+                        
+                            <div class="circle-center-tip">Llamanos: (+58) 412 594 88 72</div>
+                            <i class="fa fa-phone"></i>
+                        
+                        </div>
+                    
+                    </a>
+                
+                </div>
+            
+            </div>
+            
+            <div class="clear">
+            </div>
+
+        </div>
+    
+    </section>
+    
+    <section id="servicios" class="insurances-slider section-gray">
+    
+        <div class="center">
+        
+            <div class="green-line">
+            </div>
+            
+            <div class="images">
+            
+                <div class="image" style="background-image: url( '_assets/_img/endodoncia.jpg' );" data-insurance-key="house">
+                </div>
+                
+                <div class="image" style="background-image: url( '_assets/_img/periodoncia.jpg' );" data-insurance-key="travel">
+                </div>
+                
+                <div class="image" style="background-image: url( '_assets/_img/dentist-1.jpg' );" data-insurance-key="life">
+                </div>
+
+                <div class="image" style="background-image: url( '_assets/_img/cirujia-dental.jpg' );" data-insurance-key="car">
+                </div>
+            
+            </div>
+        
+            <div class="content">
+
+                <div class="descriptions">
+
+                    <div class="description" data-insurance-key="house">
+                    
+                        <h3>Servicios</h3>
+                        <h2>Endodoncia</h2>
+                        
+                        <p class="justificar">La endodoncia es un procedimiento que sirve para conservar piezas dentales, que de otra forma habría que extraer, permitiendo su posterior reconstrucción y rehabilitación, evitando por tanto el tener que realizar la exodoncia. No hay nada mejor que el propio diente, y puesto que la extracción es un tratamiento irreversible, en los casos necesarios la endodoncia es el primer tratamiento que se debe contemplar
+                        </p>
+                        <button class="button button-navy-blue" data-action="show-contact-popup" data-quote-key="house-insurance">Pedir cita <i class="fa fa-paper-plane-o"></i></button>
+                    
+                    </div>
+                    
+                    <div class="description" data-insurance-key="travel">
+                    
+                        <h3>Servicios</h3>
+                       <h2>Periodoncia</h2>
+                        
+                        <p class="justificar" >Es la rama de la odontología que trata las enfermedades de las encías y del hueso que soporta al diente. Los malos hábitos de higiene bucal, técnica deficiente de cepillado, hábito de fumar, etc. ocasionan acumulación de restos de alimentos y otros irritantes que favorecen la proliferación de bacterias que producen substancias químicas que inflaman e irritan las encías. Esta es una de las enfermedades mas comunes que existe debido a que no presenta síntomas hasta que la enfermedad se encuentra en un estado muy avanzado. Sus principales síntomas son: sangramiento frecuente de las encías, principalmente al cepillarse, movilidad dental y mal aliento.</p>
+                        <button class="button button-navy-blue" data-action="show-contact-popup" data-quote-key="travel-insurance">Pedir cita  <i class="fa fa-paper-plane-o"></i></button>
+                    
+                    </div>
+                    
+                    <div class="description" data-insurance-key="life">
+                    
+                        <h3>Servicios</h3>
+                        <h2>Operatoria</h2>
+                        
+                        <p class="justificar" >Es el arte y la ciencia del diagnóstico, pronóstico y tratamiento de los dientes afectados por caries, traumatismos, erosiones, abrasiones y defectos congénitos; y prevenir la iniciación de lesiones futuras, tratando de conseguir una restauración que devuelva la salud, anatomia, fisiologia y estética de los dientes en una relacion armonica con los tejidos duros y blandos adyacentes mejorando en conjunto la salud y bienestar del paciente.</p>
+                        <button class="button button-navy-blue" data-action="show-contact-popup" data-quote-key="life-insurance">Pedir cita  <i class="fa fa-paper-plane-o"></i></button>
+                    
+                    </div>
+
+                    <div class="description" data-insurance-key="car">
+                    
+                        <h3>Servicios</h3>
+                        <h2>Cirugía Bucal</h2>
+                        
+                        <p>La Cirugía Bucal es la especialidad más antigua reconocida dentro de la odontología y se encarga de diagnosticar y tratar quirúrgicamente las enfermedades, traumas y defectos de los dientes, la boca, los maxilares y sus tejidos contiguos tanto en su aspecto funcional como en el estético. La cirugía bucal puede ser necesaria por diversas razones, por ejemplo, puedes tener un diente traumatizado y atrapado en tu mandíbula y es necesario acomodarlo para que tengas una buena mordida. También puedes tener un diente mal posicionado y el mismo está haciéndole daño al diente de al lado.
+</p>
+                        <button class="button button-navy-blue" data-action="show-contact-popup" data-quote-key="car-insurance">Pedir cita <i class="fa fa-paper-plane-o"></i></button>
+                    
+                    </div>
+
+                </div>
+                
+                <ul class="tabs">
+                
+                    <li class="active" data-insurance-key="house">
+                    
+                        <i class="fa fa-ambulance"></i>
+                        <span>Endodoncia</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="travel">
+                    
+                        <i class="fa fa-ambulance"></i>
+                        <span>Periodoncia</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="life">
+                    
+                        <i class="fa fa-plus-circle"></i>
+                        <span>Operatoria</span>
+                    
+                    </li>
+                    
+                    <li data-insurance-key="car">
+                    
+                        <i class="fa fa-stethoscope"></i>
+                        <span>Cirugía Dental</span>
+                    
+                    </li>
+
+                </ul>
+            
+            </div>
+            
+            <div class="clear">
+            </div>
+        
+        </div>
+    
+    </section>
+
+ 
+
+    <section class="contact section-gray">
+    
+        <div class="center">
+        
+            <i class="fa fa-envelope-o background-icon"></i>
+            <div class="contact-details">
+
+                <div class="contact-detail-single">
+                
+                    <h3><i class="fa fa-map-marker"></i> Información</h3>
+                    <p><strong>Servicios Odontológicos</strong><br /> Angélica Carmona</p>
+                    <p class="without-margin-bottom">Av. Principal del Bosque <br /> Edf. Pichincha, Piso 4 <br> Chacaito, Distrito Capital</p>
+                     
+                </div>
+
+                <div class="contact-detail-single">
+                
+                    <h3><i class="fa fa-envelope-o"></i> Detalles de Contacto</h3>
+                    <p>E-mail: <br /><a href="#">citas@dentalangelica.com.ve</a></p>     
+                    <p class="without-margin-bottom"><button class="button button-navy-blue" data-action="show-contact-popup">Contactenos! <i class="fa fa-paper-plane-o"></i></button></p>
+                
+                </div>
+                
+                <div class="contact-detail-single contact-detail-single-last">
+                
+                    <h2>0412 594 88 72</h2> 
+                    <p class="without-margin-bottom">Disponible de Lunes a Viernes <br> de 8:00am - 4:00pm</p> 
+                
+                </div>
+            
+            </div>
+
+        </div>
+    
+    </section>
+
+    <footer>
+
+        <div class="center">
+
+            <div class="green-line">
+            </div>
+        
+            <nav>
+        
+                <ul class="left">
+    
+                  <!--  <li>
+                    
+                        <h4>Insurances</h4>  
+                        <ul class="sub">
+                        
+                            <li><a href="/life-insurance.html">Life insurance</a></li>
+                            <li><a href="/car-insurance.html">Car insurance</a></li>
+                            <li><a href="/house-insurance.html">House insurance</a></li>
+                            <li><a href="/travel-insurance.html">Travel insurance</a></li>
+                        
+                        </ul>
+                    
+                    </li> -->
+    
+                  <!--  <li>
+                    
+                        <h4>Pages</h4>
+                        <ul class="sub">
+                        
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/agents.html">Agents</a></li>
+                            <li><a href="/claims.html">Claims</a></li>
+                            <li><button class="menu-element" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote</button></li>
+                            <li><a href="/blog.html">Blog</a></li>
+                            <li><button class="menu-element" data-action="show-contact-popup">Contact</button></li>
+                        
+                        </ul>
+                    
+                    </li> -->
+                    
+                    <li>
+                    
+                        <h4>Siguenos!</h4>
+                        <ul class="sub">
+                        
+                            <li><a href="https://www.facebook.com/groups/762399547206544/">Facebook</a></li>
+                          <!--  <li><a href="#">Google+</a></li> -->
+                        
+                        </ul>
+                    
+                    </li>
+                    
+                </ul>
+            
+            </nav>
+            
+            <ul class="right">
+            
+                <li>Copyright &copy; 2016 <span class="divider">&middot;</span> <a href="http://www.gendigital.com.ve/index.html">Diseñado por Generación Digital</a></li>
+               <!-- <li><div class="fb-like" data-href="https://www.facebook.com/envato" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></li> -->
+            
+            </ul>
+
+            <div class="clear">
+            </div>
+        
+        </div>
+    
+    </footer>
+
+    <!--
+    facebook SDK
+    -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script src="_assets/_libs/jquery.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="_assets/_libs/no-ui-slider/jquery.nouislider.all.min.js"></script>
+    <script src="_assets/_libs/smoothscroll.js"></script>
+    <script src="_assets/_libs/parallax.js"></script>
+    <script src="_assets/_js/functions.js"></script>
+
+</body>
+</html>
